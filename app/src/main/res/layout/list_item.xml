@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Name"
+                android:padding="10sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/capital"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Capital"
+                android:padding="10sp"
+                />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:gravity="center_vertical"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/flag"
+                   android:textSize="14sp"
+                   android:textColor="@color/black"
+                   android:text="Flag: "
+                   android:padding="10sp"
+                   />
+
+               <ImageView
+                   android:layout_width="40dp"
+                   android:layout_height="30dp"
+                   android:id="@+id/flag_image"
+                   android:src="@color/teal_200"
+                   android:scaleType="fitXY"
+                   />
+
+
+           </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/region"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Region"
+                android:padding="10sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/subregion"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Sub Region"
+                android:padding="10sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/population"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Population"
+                android:padding="10sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/borders"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Borders"
+                android:padding="10sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/languages"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Languages"
+                android:padding="10sp"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
